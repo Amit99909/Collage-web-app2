@@ -1,0 +1,38 @@
+.img1{
+    width:300px;
+    height: 300px;
+    border: 20px double rgb(158, 40, 40);
+
+}
+#div1,#div2,#div3{
+    display: inline;
+}
+body{
+    background-color:rgb(224, 194, 93);
+}
+#footer_div{
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+#start-btn
+{
+    width: 40%;
+} 
+#camera
+{
+    width:360px;
+    height: 250px;
+    border:1px solid grey;
+}
+
+#textbox
+{
+    width: 300px;
+}
+.img1:hover{
+    border-radius: 18px;
+    width: 250px;
+    height: 250px;
+}
