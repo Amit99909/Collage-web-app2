@@ -9,7 +9,7 @@ recorder.onresult =function(event){
    //console.log(event);
     myText=event.results[0][0].transcript;
     document.getElementById("textbox").innerHTML=myText;
-    if (myText=="Take my selfie.") {
+    if (myText=="Selfie.") {
         resp();
     }
 }
