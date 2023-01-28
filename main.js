@@ -6,6 +6,16 @@ function sl(){
 }
 recorder.onresult =function(event){
 
-    console.log(event);
-    myText=event.results[0][0].transcript
+   //console.log(event);
+    myText=event.results[0][0].transcript;
+    document.getElementById("textbox").innerHTML=myText;
+    if (myText=="Take my selfie.") {
+        resp();
+    }
 }
+function resp(){
+    texttospeech=window.speechSynthesis;
+    textresp="taking selfie in three seconds";
+    speechresp=new SpeechSynthesisUtterance(textresp);
+    texttospeech.speak(speechresp);
+    Webcam.attach(document.getElementById("camera"));
