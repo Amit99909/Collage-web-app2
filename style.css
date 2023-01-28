@@ -36,3 +36,5 @@ body{
     width: 250px;
     height: 250px;
 }
+#title{
+    font-style:inherit;
